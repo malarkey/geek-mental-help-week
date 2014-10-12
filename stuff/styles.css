@@ -1,3 +1,70 @@
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:0 0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+
+body {
+	font-size: 20px;
+	line-height: 1.5;
+	padding-bottom: 1.5em;
+}
+
+body * + * {
+	margin-top: 1.5em;
+}
+
+li {
+	margin-top: 0;
+}
+
+main {
+	max-width: 35em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+h1 code {
+	display: block;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+h1, h2, h3 {
+	line-height: 1.125;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 2.25em; }
+h3 { font-size: 1.66em; }
+
+[role="contentinfo"] {
+	text-align: center;
+	margin-top: 3em;
+}
+
+sup {
+	vertical-align: super;
+	line-height: 0;
+	font-size: 0.66em;
+}
+
+[role="navigation"] ul {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+[role="navigation"] li {
+	display: table-cell;
+	text-align: center;
+}
+
+[role="navigation"] a {
+	display: block;
+	padding: 0.75em 0;
+}
+
 h2 + .empty-state {
 	display: block !important;
 }
