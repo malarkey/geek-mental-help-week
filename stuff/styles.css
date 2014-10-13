@@ -3,11 +3,42 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
 body {
 	font-size: 20px;
 	line-height: 1.5;
-	padding-bottom: 1.5em;
 }
+
+/*
+LINKS
+------------------------------------------------------------------------------
+*/
+
+a, a:visited {
+	color: #0000ee;
+}
+
+a:hover, a:focus {
+	color: #000077;
+}
+
+p a, li a {
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+
+p a:hover, p a:focus,
+li a:hover, li a:focus {
+	border-bottom: 3px solid;
+}
+
+/*
+FLOW
+------------------------------------------------------------------------------
+*/
 
 body * + * {
 	margin-top: 1.5em;
+}
+
+br {
+	margin-top: 0;
 }
 
 li {
@@ -18,6 +49,8 @@ main {
 	max-width: 35em;
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 2.25em;
+	padding: 0 1em;
 }
 
 h1 {
@@ -38,16 +71,38 @@ h1 { font-size: 3em; }
 h2 { font-size: 2.25em; }
 h3 { font-size: 1.66em; }
 
-[role="contentinfo"] {
-	text-align: center;
-	margin-top: 3em;
+/*
+INLINE STYLES
+------------------------------------------------------------------------------
+*/
+
+em, i, q, cite {
+	font-style: italic;
 }
 
-sup {
-	vertical-align: super;
-	line-height: 0;
-	font-size: 0.66em;
+b, strong, abbr {
+	font-weight: 700;
 }
+
+abbr {
+	cursor: help;
+	letter-spacing: 2px;
+}
+
+small {
+	color: $color-lighter;
+	font-size: 0.85em;
+}
+
+code {
+	font-family: monospace;
+	font-size: 0.85em;	
+}
+
+/*
+NAVIGATION
+------------------------------------------------------------------------------
+*/
 
 [role="navigation"] ul {
 	display: table;
@@ -63,8 +118,89 @@ sup {
 [role="navigation"] a {
 	display: block;
 	padding: 0.75em 0;
+	color: #fff;
+	text-decoration: none;
+	background: #0000EE;
+	border: 0 !important;
+}
+
+[role="navigation"] a:hover, 
+[role="navigation"] a:focus {
+	background: #000077;
+}
+
+[role="navigation"] li + li a {
+	margin-left: 0.125em;
 }
 
 h2 + .empty-state {
 	display: block !important;
+}
+
+/*
+FOOTER
+------------------------------------------------------------------------------
+*/
+
+[role="contentinfo"] {
+	text-align: center;
+	padding: 3em;
+	margin-top: 3em;
+	background: #000;
+	color: #fff;
+}
+
+[role="contentinfo"] a {
+	color: #fff;
+}
+
+/*
+UTILITIES
+------------------------------------------------------------------------------
+*/
+
+.block {
+	display: block;
+}
+
+.no-top-margin {
+	margin-top: 0;
+}
+
+/*
+BREAKPOINTS
+------------------------------------------------------------------------------
+*/
+
+@media all and (max-width: 715px) {
+
+	[role="navigation"] li {
+		display: block;
+	}
+
+	[role="navigation"] li:first-child ~ li {
+		float: left;
+		width: 50%;
+	}
+
+	[role="navigation"] li:nth-child(even) a {
+		margin-left: 0;
+	}
+
+	[role="navigation"] li + li {
+		margin-top: 0.125em;
+	}
+
+}
+
+@media all and (max-width: 650px) {
+
+	body {
+		font-size: 17px;
+	}
+
+	[role="navigation"] a {
+		padding: 0.5em 0;
+	}
+
 }
