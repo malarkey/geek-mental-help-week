@@ -5,6 +5,13 @@ body {
 	line-height: 1.5;
 }
 
+* {
+	font-family: inherit;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 /*
 LINKS
 ------------------------------------------------------------------------------
@@ -70,6 +77,12 @@ h1, h2, h3 {
 h1 { font-size: 3em; }
 h2 { font-size: 2.25em; }
 h3 { font-size: 1.66em; }
+
+section + section {
+	border-top: 1px dashed #aaa;
+	padding-top: 2.25em;
+	margin-top: 2.25em;
+}
 
 /*
 INLINE STYLES
@@ -168,11 +181,46 @@ UTILITIES
 }
 
 /*
+SMALL SCREEN MENU
+------------------------------------------------------------------------------
+*/
+
+[aria-controls="nav"] {
+	border: 0;
+	background: #0000ee;
+	padding: 1em;
+	text-align: center;
+	color: #fff;
+	display: block;
+	width: 100%;
+	font-size: 1.25em;
+	display: none;
+	cursor: pointer;
+}
+
+[aria-controls="nav"]:hover, [aria-controls="nav"]:focus {
+	background: #000077;
+}
+
+[aria-controls="nav"] + * {
+	margin-top: 0;
+}
+
+[aria-controls="nav"] span {
+	font-size: 1.5em;
+}
+
+button::-moz-focus-inner { 
+  border: 0;
+  padding: 0;
+}
+
+/*
 BREAKPOINTS
 ------------------------------------------------------------------------------
 */
 
-@media all and (max-width: 715px) {
+@media all and (max-width: 800px) {
 
 	[role="navigation"] li {
 		display: block;
@@ -183,12 +231,22 @@ BREAKPOINTS
 		width: 50%;
 	}
 
+	[role="navigation"] a {
+		padding: 0.5em 0;
+	}
+
 	[role="navigation"] li:nth-child(even) a {
 		margin-left: 0;
 	}
 
 	[role="navigation"] li + li {
 		margin-top: 0.125em;
+	}
+
+	[role="navigation"] ul:after {
+		content: '\0020';
+		display: block;
+		clear: both;
 	}
 
 }
@@ -199,8 +257,26 @@ BREAKPOINTS
 		font-size: 17px;
 	}
 
+	[role="navigation"] li {
+		width: 100% !important;
+		margin-top: 0 !important;
+		border-top: 2px solid #fff;
+	}
+
 	[role="navigation"] a {
-		padding: 0.5em 0;
+		margin-left: 0 !important;
+	}
+
+	[aria-controls="nav"] {
+		display: block;
+	}
+
+	[aria-controls="nav"] + #nav {
+		display: none;
+	}
+
+	[aria-controls="nav"][aria-expanded="true"] + #nav {
+		display: block;
 	}
 
 }
