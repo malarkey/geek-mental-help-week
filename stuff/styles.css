@@ -199,6 +199,10 @@ UTILITIES
 	padding: 1.5em;
 }
 
+.message a, [role="contentinfo"] a {
+	color: inherit;
+}
+
 /*
 SMALL SCREEN MENU
 ------------------------------------------------------------------------------
