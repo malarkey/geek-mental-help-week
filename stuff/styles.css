@@ -82,6 +82,11 @@ h2 a, h3 a {
 	text-decoration: none;
 }
 
+h3 a:hover, h3 a:active {
+	outline: none;
+	border-bottom: 2px solid;
+}
+
 section + section {
 	margin-top: 0;
 }
