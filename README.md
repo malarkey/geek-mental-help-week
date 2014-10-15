@@ -15,7 +15,6 @@ If you have written an article, recorded a podcast or have organised an event fo
 Just replace the placeholders in square brackets. The `class="date"` and `class="author"` paragraphs are optional.
 
 ```
-<!-- start example template...
 	<div class="submission">
 		<p class="date"><time datetime="[formatted date]">[humanized date]</time></p>
 		<h3>
@@ -28,5 +27,4 @@ Just replace the placeholders in square brackets. The `class="date"` and `class=
 			[submission description]
 		</p>
 	</div>
-... end example template-->
 ```
