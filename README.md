@@ -28,3 +28,7 @@ Just replace the placeholders in square brackets. The `class="date"` and `class=
 		</p>
 	</div>
 ```
+
+### Sharing
+
+The Twitter hashtag you are looking for is [#geekmentalhelp](https://twitter.com/search?q=%23geekmentalhelp)
