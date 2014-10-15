@@ -271,7 +271,7 @@ BREAKPOINTS
 ------------------------------------------------------------------------------
 */
 
-@media all and (max-width: 810px) {
+@media all and (max-width: 900px) {
 
 	body {
 		font-size: 20px;
@@ -279,7 +279,7 @@ BREAKPOINTS
 
 }
 
-@media all and (max-width: 666px) {
+@media all and (max-width: 700px) {
 
 	body {
 		font-size: 18px;
