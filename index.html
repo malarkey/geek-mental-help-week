@@ -4,6 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="stuff/styles.css" rel="stylesheet" media="all" />
+		<script src="//use.typekit.net/get5gks.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300&text={Geek}' rel='stylesheet' type='text/css'>
 		<title>Mental Help Week</title>
 		<!--[if lt IE 9]>
 			<script src="stuff/html5shiv.js"></script>
@@ -14,106 +17,163 @@
 		<nav role="navigation" id="navigation" aria-label="choose a section" tabindex="-1">
 			<button aria-controls="nav" aria-expanded="false"><span aria-hidden>&#x2630;</span> Menu</button>
 			<ul id="nav">
-				<li><a href="#introduction">introduction</a></li>
+				<li><a href="#introduction">about</a></li>
 				<li><a href="#articles">articles</a></li>
 				<li><a href="#podcasts">podcasts</a></li>
 				<li><a href="#events">events</a></li>
-				<li><a href="#more">more&hellip;</a></li>
+				<li><a href="#more">more resources</a></li>
 			</ul>
 		</nav>
 		<main role="main" id="main">
 			<div>
-				<h1>
-					<code>Geek</code> 
-					Mental Help Week
-				</h1>
-				<div id="introduction">
-					<p>Geek Mental Help Week, a week-long series <a href="#articles">articles</a>, blog posts, conversations, <a href="#podcasts">podcasts</a> and <a href="#events">events</a> across the web, about mental health issues, how to help people who suffer and those who care for us, starting on October 27<sup>th</sup>.</p>
+				<div class="narrowed">
+					<h1>
+						<code class="block"><span aria-hidden>{</span>Geek<span aria-hidden>}</span></code> 
+						Mental Help Week
+					</h1>
+					<div>
+						<p id="introduction">Starting on October 27<sup>th</sup> 2014, Geek mental help week is a week-long series articles, blog posts, conversations, podcasts and events across the web, about mental health issues, how to help people who suffer and those who care for us.</p>
+						<p>Follow <a href="http://twitter.com/geekmentalhelp">@geekmentalhelp</a> and share <a href="https://twitter.com/share?url=http://heydon.github.io/mental-health-week&text=%23geekmentalhelp">#geekmentalhelp</a></p>
+					</div>
 				</div>
 				<section id="articles" tabindex="-1">
-					<h2>Articles</h2>
-					<!-- start example template...
+					<div>
+						<h2>Articles and blog entries</h2>
+						<p>To add a link to an article or blog entry, follow the README guidelines and submit a pull request.</p>
+						<!-- start example template...
+							<div class="submission">
+								<p class="date"><time datetime="[formatted date]">[humanized date]</time></p>
+								<h3>
+									<a href="[submission link]">[Title of submission]</a>
+								</h3>
+								<p class="author">
+									<i>by</i> <a href="[Author's Twitter or blog]">[Author name]</a>
+								</p>
+								<p>
+									[submission description]
+								</p>
+							</div>
+						... end example template-->
 						<div class="submission">
+							<p><time datetime="06-10-2014">October 6<sup>th</sup> 2014</time></p>
 							<h3>
-								<a href="[submission link]">[Title of submission]</a>
+								<a href="http://stuffandnonsense.co.uk/blog/about/announcing-geek-mental-help-week">Announcing Geek Mental Help Week</a>
 							</h3>
-							<p>
-								[submission description]
+							<p class="author">
+								<i>by</i> <a href="https://twitter.com/Malarkey">Andrew Clarke</a>
 							</p>
-							<p class="citation">
-								Submitted by <a href="[name of submitter link]">[name of submitter]</a> 
-							</p>
+							<p class="description">&#x201c;After talking with Laura on Unfinished Business this week, about burgers in donuts, we moved on to discuss the Geek Mental Help Week that I’ve been thinking about and planning for the last few months. Something that I sincerely hope will help those of us who suffer from mental health issues and the others who support us.&#x201d;</p>
 						</div>
-					... end example template-->
-					<p class="empty-state" style="display: none">There are no articles for <em>Mental Help Week</em> so far. If you have one, please clone, follow the <code>README</code> guidelines and submit a pull request!</p>
-					<p class="to-menu"><a href="#navigation">back to menu <span aria-hidden>&#x2191;</span></a></p>
+						<div class="submission">
+							<p><time datetime="06-10-2014">October 6<sup>th</sup> 2014</time></p>
+							<h3>
+								<a href="http://lukejones.me/archives/mind/">Mind</a>
+							</h3>
+							<p class="author">
+								<i>by</i> <a href="https://twitter.com/lukejones">Luke Jones</a>
+							</p>
+							<p class="description">&#x201c;This is my (unfiltered) story about my experiences with depression. I want people to be more open about mental illness.&#x201d;</p>
+						</div>					
+						<p class="to-menu"><a href="#navigation">back to menu <span aria-hidden>&#x2191;</span></a></p>
+					</div>
 				</section>
 				<section id="podcasts" tabindex="-1">
-					<h2>Podcasts</h2>
-					<!-- start example template...
+					<div>
+						<h2>Podcasts</h2>
+						<p>To add a link to a podcast episode, follow the README guidelines and submit a pull request.</p>
+						<!-- start example template...
+							<div class="submission">
+								<p class="date"><time datetime="[formatted date]">[humanized date]</time></p>
+								<h3>
+									<a href="[submission link]">[Title of submission]</a>
+								</h3>
+								<p class="author">
+									<i>by</i> <a href="[Author's Twitter or blog]">[Author name]</a>
+								</p>
+								<p>
+									[submission description]
+								</p>
+							</div>
+						... end example template-->
 						<div class="submission">
 							<h3>
-								<a href="[submission link]">[Title of submission]</a>
+								<a href="http://stuffandnonsense.co.uk/blog/about/unfinished-business-episode-89-burger-in-a-donut-with-laura-kalbag">Unfinished Business episode 89: &#x2018;Burger in a donut&#x2019; with Laura Kalbag</a>
 							</h3>
-							<p>
-								[submission description]
-							</p>
-							<p class="citation">
-								Submitted by <a href="[name of submitter link]">[name of submitter]</a> 
-							</p>
+							<p class="description">This week’s an emotional episode of Unfinished Business. After talking about why a burger in a donut should never, ever have become a thing, Laura Kalbag and I discuss mental health issues in our industry. We talk about my own struggles with depression and depersonalisation disorder, issues that stem from my father’s own mental health issues and suicide.</p>
 						</div>
-					... end example template-->
-					<p class="empty-state" style="display: none">There are no podcasts for <em>Mental Help Week</em> so far. If you have one, please clone, follow the <code>README</code> guidelines and submit a pull request!</p>
-					<p class="to-menu"><a href="#navigation">back to menu <span aria-hidden>&#x2191;</span></a></p>
+						<div class="submission">
+							<h3>
+								<a href="http://relativepaths.uk/episode-6-ch-ch-ch-changes/">Relative Paths episode 6: &#x2018;Ch-ch-ch-Changes | Hiding In The Toilet&#x2019;</a>
+							</h3>
+							<p class="description">This week&#x2019;s an emotional episode of Unfinished Business. After talking about why a burger in a donut should never, ever have become a thing, Laura Kalbag and I discuss mental health issues in our industry. We talk about my own struggles with depression and depersonalisation disorder, issues that stem from my father’s own mental health issues and suicide.</p>
+						</div>
+						<p class="to-menu"><a href="#navigation">back to menu <span aria-hidden>&#x2191;</span></a></p>
+					</div>
 				</section>
 				<section id="events" tabindex="-1">
-					<h2>Events</h2>
-					<!-- start example template...
+					<div>
+						<h2>Events</h2>
+						<p>To add an event, follow the README guidelines and submit a pull request.</p>
+						<!-- start example template...
+							<div class="submission">
+								<p class="date"><time datetime="[formatted date]">[humanized date]</time></p>
+								<h3>
+									<a href="[submission link]">[Title of submission]</a>
+								</h3>
+								<p class="author">
+									<i>by</i> <a href="[Author's Twitter or blog]">[Author name]</a>
+								</p>
+								<p>
+									[submission description]
+								</p>
+							</div>
+						... end example template-->
 						<div class="submission">
+							<p><time datetime="28-10-2014">October 28<sup>th</sup> 2014</time></p>
 							<h3>
-								<a href="[submission link]">[Title of submission]</a>
+								<a href="http://mentalhelp.mkgeeknight.co.uk/">MK Geek Night Mental Help Night</a>
 							</h3>
-							<p>
-								[submission description]
-							</p>
-							<p class="citation">
-								Submitted by <a href="[name of submitter link]">[name of submitter]</a> 
-							</p>
+							<p class="description">MKGN Mental Help Night is special format with five headline speakers who either suffer or care themselves. There will be plenty of time in the night for you to meet and chat with our speakers and your fellow attendees.</p>
 						</div>
-					... end example template-->
-					<p class="empty-state" style="display: none">There are no events for <em>Mental Help Week</em> so far. If you have one, please clone, follow the <code>README</code> guidelines and submit a pull request!</p>
-					<p class="to-menu"><a href="#navigation">back to menu <span aria-hidden>&#x2191;</span></a></p>
+						<div class="submission">
+							<p><time datetime="30-10-2014">October 30<sup>th</sup> 2014</time></p>
+							<h3>
+								<a href="http://www.theweb.is/">The Web Is&hellip;</a>
+							</h3>
+							<p class="description">Andrew Clarke is devoting his session at the end of The Web Is conference to Geek Mental Help Week and will be talking with Christopher Murphy, Cole Henley, Relly Annett-Baker and Dr. Clare Symons.</p>
+						</div>
+						<p class="to-menu"><a href="#navigation">back to menu <span aria-hidden>&#x2191;</span></a></p>
+					</div>
 				</section>
 				<section id="more" tabindex="-1">
-					<h2>More&hellip;</h2>
-					<!-- start example template...
-						<div class="submission">
-							<h3>
-								<a href="[submission link]">[Title of submission]</a>
-							</h3>
-							<p>
-								[submission description]
-							</p>
-							<p class="citation">
-								Submitted by <a href="[name of submitter link]">[name of submitter]</a> 
-							</p>
-						</div>
-					... end example template-->
-					<p class="empty-state" style="display: none">Have anything to submit for <em>Mental Help Week</em> that isn't an article, event or pocast? Please clone, follow the <code>README</code> guidelines and submit a pull request!</p>
-					<p class="to-menu"><a href="#navigation">back to menu <span aria-hidden>&#x2191;</span></a></p>
+					<div>
+						<h2>More Resources</h2>
+						<p class="message">
+							This site is hosted on GitHub pages. If you’ve a link to an article or blog entry, a podcast episode, an event or a helpful resource, to add to this site, clone, follow the <code>README</code> guidelines and submit a pull request.
+						</p>
+						<!-- start example template...
+							<div class="submission">
+								<p class="date"><time datetime="[formatted date]">[humanized date]</time></p>
+								<h3>
+									<a href="[submission link]">[Title of submission]</a>
+								</h3>
+								<p class="author">
+									<i>by</i> <a href="[Author's Twitter or blog]">[Author name]</a>
+								</p>
+								<p>
+									[submission description]
+								</p>
+							</div>
+						... end example template-->
+						<p class="to-menu"><a href="#navigation">back to menu <span aria-hidden>&#x2191;</span></a></p>
+					</div>
 				</section>
 			</div>
 		</main>
 		<footer role="contentinfo">
 			<div>
-				<p><code>Geek</code> Mental Help Week, 2014 
-					<i class="block">With support from</i></p>
-				<ul>
-					<li><a href="http://www.stuffandnonsense.co.uk/blog/about/announcing-geek-mental-help-week">Stuff &amp; Nonsense</a></li>
-					<li><a href="http://alistapart.com/">A List Apart</a></li>
-					<li><a href="http://www.smashingmagazine.com">Smashing Magazine</a></li>
-					<li><a href="http://www.neontribe.co.uk">Neontribe</a></li>
-				</ul>
+				<p class="bigger"><code>Geek</code> Mental Help Week, 2014</p>
+				<p>Supported by <a href="http://www.neontribe.co.uk">Neontribe</a> and <a href="http://www.stuffandnonsense.co.uk/blog/about/announcing-geek-mental-help-week">Stuff &amp; Nonsense</a></p>
 			</div>
 		</footer>
 		<script src="stuff/scripts.js"></script>
