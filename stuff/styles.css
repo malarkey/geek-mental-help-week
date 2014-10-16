@@ -82,7 +82,7 @@ h2 a, h3 a {
 	text-decoration: none;
 }
 
-h3 a:hover, h3 a:active {
+h3 a:hover, h3 a:focus {
 	outline: none;
 	border-bottom: 2px solid;
 }
