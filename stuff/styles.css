@@ -65,9 +65,17 @@ main {
 	padding: 3em 1em;
 }
 
+main > div > .narrowed {
+	padding-top: 1.5em;
+}
+
 h1, h2, h3 {
 	line-height: 1;
 	font-weight: 300;
+}
+
+h1 code {
+	margin-top: 0;
 }
 
 h1 { font-size: 3em; }
@@ -272,6 +280,51 @@ time {
 }
 
 /*
+SVG
+------------------------------------------------------------------------------
+*/
+
+svg#brain {
+  width: 2.5em;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 img {
+	max-width: 200px;
+}
+
+@-webkit-keyframes pulse {
+  0%   { opacity: 0.3; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.3; }
+}
+
+@keyframes pulse {
+  0%   { opacity: 0.3; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.3; }
+}
+
+rect:nth-child(odd) {
+  -webkit-animation: pulse 3s infinite ease;
+          animation: pulse 3s infinite ease;
+  position: relative;
+}
+
+rect:nth-child(even) {
+  -webkit-animation: pulse 4s infinite ease;
+          animation: pulse 4s infinite ease;
+  position: relative;
+}
+
+rect:nth-child(3n + 1) {
+  -webkit-animation: pulse 2s infinite ease;
+          animation: pulse 2s infinite ease;
+  position: relative;
+}
+
+/*
 BREAKPOINTS
 ------------------------------------------------------------------------------
 */
@@ -312,6 +365,18 @@ BREAKPOINTS
 
 	[aria-controls="nav"][aria-expanded="true"] + #nav {
 		display: block;
+	}
+
+	.narrowed {
+		padding-top: 1.5em;
+	}
+
+}
+
+@media all and (max-width: 550px) {
+
+	svg#brain {
+		width: 2.5em;
 	}
 
 }
