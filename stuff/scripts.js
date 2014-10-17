@@ -17,6 +17,7 @@ $(function() {
           scrollTop: target.offset().top
         }, 500);
         $(target).focus();
+        window.location.hash = $(target).attr('id');
         return false;
       }
     }

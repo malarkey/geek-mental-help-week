@@ -82,6 +82,11 @@ h2 a, h3 a {
 	text-decoration: none;
 }
 
+h3 a:hover, h3 a:focus {
+	outline: none;
+	border-bottom: 2px solid;
+}
+
 section + section {
 	margin-top: 0;
 }
@@ -271,7 +276,7 @@ BREAKPOINTS
 ------------------------------------------------------------------------------
 */
 
-@media all and (max-width: 810px) {
+@media all and (max-width: 900px) {
 
 	body {
 		font-size: 20px;
@@ -279,7 +284,7 @@ BREAKPOINTS
 
 }
 
-@media all and (max-width: 666px) {
+@media all and (max-width: 700px) {
 
 	body {
 		font-size: 18px;
