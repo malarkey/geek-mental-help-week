@@ -12,18 +12,23 @@ If you have written an article, recorded a podcast or have organised an event fo
 
 ### Submission template
 
-Just replace the placeholders in square brackets:
+Just replace the placeholders in square brackets. The `class="date"` and `class="author"` paragraphs are optional.
 
 ```
-<div class="submission">
-	<h3>
-		<a href="[submission link]">[Title of submission]</a>
-	</h3>
-	<p>
-		[submission description]
-	</p>
-	<p class="citation">
-		Submitted by <a href="[name of submitter link]">[name of submitter]</a> 
-	</p>
-</div>
+	<div class="submission">
+		<p class="date"><time datetime="[formatted date]">[humanized date]</time></p>
+		<h3>
+			<a href="[submission link]">[Title of submission]</a>
+		</h3>
+		<p class="author">
+			<i>by</i> <a href="[Author's Twitter or blog]">[Author name]</a>
+		</p>
+		<p>
+			[submission description]
+		</p>
+	</div>
 ```
+
+### Sharing
+
+The Twitter hashtag you are looking for is [#geekmentalhelp](https://twitter.com/search?q=%23geekmentalhelp)
