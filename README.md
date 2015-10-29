@@ -1,8 +1,12 @@
 # `GEEK` Mental Help Week
 
+<<<<<<< HEAD
 Starting on October 26th, _Geek Mental Help Week_ is a week-long series of articles, blog posts, conversations, podcasts and events across the web, about mental health issues, how to help people who suffer and those who care for us. [Official announcement is here](http://www.stuffandnonsense.co.uk/blog/about/announcing-geek-mental-help-week).
 
 Official site can be found at [http://geekmentalhelp.com/](http://geekmentalhelp.com/).
+=======
+Starting on October 27th, _Geek Mental Help Week_ is a week-long series of articles, blog posts, conversations, podcasts and events across the web, about mental health issues, how to help people who suffer and those who care for us. [Official announcement is here](http://www.stuffandnonsense.co.uk/blog/about/announcing-geek-mental-help-week).
+>>>>>>> d90283c0e0bb47af108642194d05db8ff23c7943
 
 ## Contribute
 
