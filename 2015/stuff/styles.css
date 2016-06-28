@@ -1,0 +1,348 @@
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:0 0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+
+body {
+font-size : 1.4rem;
+line-height : 1.6;
+font-family : Merriweather, sans-serif;
+font-weight : 300; }
+
+* {
+font-family: inherit;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+
+
+
+/* LINKS ------------------------------------------------------------------------------ */
+
+a, a:visited {
+color : #4A5A20; }
+
+a:hover, a:focus {
+color: #6f7f45; }
+
+p a, li a {
+text-decoration : none;
+border-bottom : 1px dotted;
+}
+
+p a:hover, p a:focus,
+li a:hover, li a:focus {
+border-bottom : 3px solid; }
+
+
+
+
+
+/* FLOW ------------------------------------------------------------------------------ */
+
+body * + * {
+margin-top : 1.5rem; }
+
+br {
+margin-top : 0; }
+
+li {
+margin-top : 0; }
+
+main {
+margin-top : 0; }
+
+.narrowed, section > div {
+margin-right : auto;
+margin-left : auto;
+max-width : 40em;
+padding : 3rem 1rem; }
+
+main > div > .narrowed {
+padding-top : 1.5rem; }
+
+h1, h2, h3 {
+line-height : 1; 
+font-weight : 300; }
+
+h1 code {
+margin-top : 0; }
+
+h1 { font-size : 2.8rem; }
+h2 { font-size : 2.1rem; }
+h3 { font-size : 1.8rem; }
+
+h1, h2 {
+text-align : center; }
+
+h1, h2 {
+margin-bottom : 2.1rem; }
+
+h2 a, h3 a {
+text-decoration : none; }
+
+h3 a:hover, h3 a:focus {
+outline : none; 
+border-bottom : 2px solid; }
+
+section + section {
+margin-top : 0; }
+
+section:nth-child(even) {
+background : #FAF7E7; }
+
+#articles {
+margin-top : 0; }
+
+h2 + p {
+margin-top : .25rem; }
+
+
+
+
+/* INLINE STYLES ------------------------------------------------------------------------------ */
+
+em, i, q, cite {
+font-style: italic;
+}
+
+b, strong, abbr {
+font-weight: 700;
+}
+
+abbr {
+cursor: help;
+letter-spacing: 2px;
+}
+
+small {
+color: $color-lighter;
+font-size: 0.85em;
+}
+
+sup {
+vertical-align: 0.5em;
+font-size: 0.7em;
+}
+
+#introduction {
+font-size : 1.6rem; }
+
+
+
+
+
+/* NAVIGATION ------------------------------------------------------------------------------ */
+
+[role="navigation"] {
+background: #CAD99E;
+text-align: center;
+border-bottom: 5px solid #E4ECCE;
+}
+
+[role="navigation"] li {
+display: inline;
+list-style: none;
+}
+
+[role="navigation"] a {
+display: inline-block;
+padding: 0.75em 1.25em;
+border: 0 !important;
+font-size: 1em;
+}
+
+[role="navigation"] a:hover,
+[role="navigation"] a:focus {
+outline: none;
+background: #4A5A20;
+color: #E4ECCE;
+}
+
+
+
+
+
+/* FOOTER ------------------------------------------------------------------------------ */
+
+[role="contentinfo"] {
+text-align: center;
+padding: 3em;
+background: #CAD99E;
+border-top: 5px solid #4A5A20;
+}
+
+
+
+
+
+/* UTILITIES ------------------------------------------------------------------------------ */
+
+.block {
+display: block;
+}
+
+.no-top-margin {
+margin-top: 0;
+}
+
+.bigger {
+font-size: 1.25em;
+}
+
+.message {
+background: #CAD99E;
+padding: 1.5em;
+}
+
+.message a, [role="contentinfo"] a {
+color: inherit;
+}
+
+
+
+
+
+/* SMALL SCREEN MENU ------------------------------------------------------------------------------ */
+
+[aria-controls="nav"] {
+border: 0;
+background-color : #4A5A20;
+padding : 1rem;
+text-align : center;
+color : #fff;
+display : block;
+width : 100%;
+font-size : 1.25rem;
+display : none;
+cursor : pointer; }
+
+[aria-controls="nav"]:before, [aria-controls="nav"]:after {
+content: '\0020\2014\0020'; }
+
+[aria-controls="nav"]:hover, [aria-controls="nav"]:focus {
+background: #6f7f45; }
+
+[aria-controls="nav"] + * {
+margin-top : 0; }
+
+button::-moz-focus-inner { 
+border : 0;
+padding : 0; }
+
+
+
+
+
+/* SUBMISSIONS ------------------------------------------------------------------------------ */
+
+.submission * + * {
+margin-top : 0.75rem; }
+
+.submission + .submission {
+padding-top : 1.5rem;
+border-top : 2px solid #CAD99E; }
+
+time {
+display : block;
+padding-bottom : 1rem;
+color : #888;
+font-size : .75rem;
+text-transform : uppercase; }
+
+.submission p + h3 {
+margin-top : 0; }
+
+.to-menu {
+text-align : center;
+margin-top : 3em; }
+
+
+
+
+
+
+/* SVG ------------------------------------------------------------------------------ */
+
+svg#brain {
+width : 2.5em;
+display : block;
+margin : 0 auto 1.25rem; }
+
+h1 img {
+max-width : 200px; }
+
+@-webkit-keyframes pulse {
+0%   { opacity: 0.3; }
+50% { opacity: 0.8; }
+100% { opacity: 0.3; }
+}
+
+@keyframes pulse {
+0%   { opacity: 0.3; }
+50% { opacity: 0.8; }
+100% { opacity: 0.3; }
+}
+
+rect:nth-child(odd) {
+-webkit-animation : pulse 3s infinite ease;
+animation : pulse 3s infinite ease;
+position : relative; }
+
+rect:nth-child(even) {
+-webkit-animation : pulse 4s infinite ease;
+animation : pulse 4s infinite ease;
+position : relative; }
+
+rect:nth-child(3n + 1) {
+-webkit-animation : pulse 2s infinite ease;
+animation : pulse 2s infinite ease;
+position : relative; }
+
+
+
+
+
+/* BREAKPOINTS ------------------------------------------------------------------------------ */
+
+@media all and (max-width: 900px) {
+
+}
+
+
+
+@media all and (max-width: 700px) {
+
+[role="navigation"] li {
+display : block;
+width : 100% !important;
+margin-top : 0 !important;
+border-top : 2px solid #fff; }
+
+[role="navigation"] a {
+display : block;
+width : 100%; }
+
+[aria-controls="nav"] {
+display : block; }
+
+[aria-controls="nav"] + #nav {
+display : none; }
+
+[aria-controls="nav"][aria-expanded="true"] + #nav {
+display : block; }
+
+.narrowed {
+padding-top : 1.5rem; }
+
+}
+
+
+
+@media all and (max-width: 550px) {
+
+svg#brain {
+width : 2.5em;
+}
+
+}
