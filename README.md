@@ -8,9 +8,9 @@ Official site can be found at [http://geekmentalhelp.com/](http://geekmentalhelp
 
 If you have written an article, recorded a podcast or have organised an event for _Geek Mental Help Week_, please follow the simple guide below to add your submission.
 
-1. Clone this repository;
-2. Edit the `index.html` file, adding your submission into the appropriate section (eg. `<section id="articles">`) using the template provided below (also available in the `index.html` file's comments);
-3. Submit a pull request
+1. Fork this repository.
+2. In your fork, edit the `index.html` file, adding your submission into the appropriate section (eg. `<section id="articles">`) using the template provided below (also available in the `index.html` file's comments);
+3. Submit a pull request.
 
 ### Submission template
 
