@@ -283,10 +283,10 @@ sup {
 
 [aria-controls="nav"] {
     border-width: 0;
-    background-color: #88739A;
+    background-color: #fdf6e3;
     padding: 1rem;
     text-align: center;
-    color: #fff;
+    color: #586e75;
     display: block;
     width: 100%;
     font-size: 1.25rem;
@@ -299,7 +299,7 @@ sup {
 }
 
 [aria-controls="nav"]:hover, [aria-controls="nav"]:focus {
-    background-color: #D89DA7;
+    background-color: #fdf6e3;
 }
 
 [aria-controls="nav"] + * {
